@@ -8,15 +8,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/dist/css/font-awesome/css/font-awesome.min.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Mundo Tecnologico</title>
     </head>
     <body>
-        <h1>Modulo</h1>
-        <ul>
-            <li>
-                <a href="ControlUsuario?vista=lista">Usuarios</a>
-            </li>
-        </ul>
+        <div class="container-fluid">
+            <div class="container" style="margin-top: 50px;">
+                <div class="jumbotron">
+                    <h1>Inventory 8</h1><br>
+                    <p style="margin-top: 50px;">                        
+                        <a class="btn btn-primary btn-lg" href="ControlUsuario?vista=lista" role="button">
+                            <i class="fa fa-user h1"></i><br>
+                            Modulo Usuarios
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

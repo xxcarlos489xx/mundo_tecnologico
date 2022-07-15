@@ -5,6 +5,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/dist/css/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/dist/css/usuarios.css">
         <title>Lista de Usuarios</title>
     </head>
@@ -13,7 +14,7 @@
             <div class="row">
                 <div class="col-12 mt-5">
                     <div class="d-flex">
-                        <h1>Lista de usuarios</h1>
+                        <h1>Usuarios</h1>
                         <button type="button" 
                                 class="btn btn-primary" 
                                 data-toggle="modal" data-target="#modalAgregarUsuario">
@@ -26,7 +27,7 @@
                                 <th>Nombre</th>
                                 <th>Usuario</th>
                                 <th>Perfil</th>
-                                <th>Foto</th>
+                                <!--<th>Foto</th>-->
                                 <th>Estado</th>
                                 <th>Acciones</th>
                             </tr>
@@ -38,15 +39,25 @@
                                     <td>${x.getNombre()}</td>
                                     <td>${x.getUsuario()}</td>
                                     <td>${x.getPerfil()}</td>
-                                    <td>${x.getFoto()}</td>
-                                    <td>${x.getEstado()}</td>
+                                    <!--<td>${x.getFoto()}</td></th>-->
                                     <td>
+                                        <c:choose>
+                                            <c:when test="${x.getEstado() == 1}">
+                                                <span class="label label-success">Activado</span> 
+                                            </c:when>    
+                                            <c:otherwise>
+                                                <span class="label label-danger">Desactivado</span>
+                                            </c:otherwise>
+                                        </c:choose>
+                                    </td>
+                                    <td style="display: flex;">
                                         <form method="POST">
                                             <input type="hidden" name="codigo" value="${x.getUsuario()}">
                                             <input type="hidden" name="accion" value="eliminar">
                                         <button class="btn btn-danger" type="submit"/>Eliminar</button>
                                         </form>
                                         <button type="button" 
+                                                style="margin-left: 5px;"
                                                 class="btn btn-primary btnEditarUsuario" 
                                                 idUsuario="${x.getUsuario()}"
                                                 data-toggle="modal" data-target="#modalEditarUsuario">
