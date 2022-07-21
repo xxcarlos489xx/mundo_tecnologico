@@ -66,16 +66,16 @@ public class UsuarioDAO implements UsuarioInterface{
     public boolean editar(Usuario u) {
         try {
             //String sql = "Update usuarios set nombre=?,password=?,perfil=?,foto=?,estado=? where usuario="+u.getUsuario();
-            String sql = "Update usuarios set nombre=?,perfil=?,estado=? where usuario=?";
+            String sql = "Update usuarios set nombre=?,perfil=?,estado=?,password=? where usuario=?";
             con = cn.getConexion();
             ps = con.prepareStatement(sql);
             ps.setString(1, u.getNombre() );
-            //ps.setString(2, u.getPassword());
             ps.setString(2, u.getPerfil());
             //ps.setString(4, u.getFoto());
             ps.setInt(3, u.getEstado());
+            ps.setString(4, u.getPassword());
             //search
-            ps.setString(4, u.getUsuario());
+            ps.setString(5, u.getUsuario());
             ps.executeUpdate();
             ps.close();
         } catch (SQLException ex) {

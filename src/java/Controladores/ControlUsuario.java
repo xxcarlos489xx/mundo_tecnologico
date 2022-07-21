@@ -16,6 +16,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import org.apache.commons.codec.digest.DigestUtils;
 
 /**
  *
@@ -85,10 +86,7 @@ public class ControlUsuario extends HttpServlet {
         String acc = request.getParameter("accion");
         String pagina = "";
         UsuarioDAO ud = new UsuarioDAO();
-        
-        System.out.println("XX "+request.getParameterMap());
-        System.out.println("method=> "+request.getMethod());
-        System.out.println("accion"+acc);
+  
         if (acc.equalsIgnoreCase("getUser")) {
             Gson gson = new Gson();
             Usuario user;
@@ -106,10 +104,11 @@ public class ControlUsuario extends HttpServlet {
             String usuario = request.getParameter("editarUsuario");
             String perfil = request.getParameter("editarPerfil");
             int estado = Integer.parseInt((request.getParameter("editarEstado")));
-            //String pass = request.getParameter("editarPassword");
+            String pass = request.getParameter("editarPassword");
+            String passwordMD5 = DigestUtils.md5Hex(pass);            
             String foto = "";
             Usuario u = new Usuario(nombre,usuario,perfil,foto,estado);
-            //u.setPassword(pass);
+            u.setPassword(passwordMD5);
             ud.editar(u);
             //ACTUALIZANDO LISTADO
             ArrayList<Usuario>lista;
@@ -128,7 +127,8 @@ public class ControlUsuario extends HttpServlet {
             String pass = request.getParameter("password");
             String foto = "";
             Usuario u = new Usuario(nombre,usuario,perfil,foto,estado);
-            u.setPassword(pass);
+            String passwordMD5 = DigestUtils.md5Hex(pass);
+            u.setPassword(passwordMD5);
             ud.agregar(u);
             //ACTUALIZANDO LISTADO
             ArrayList<Usuario>lista;

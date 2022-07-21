@@ -17,13 +17,41 @@
         <div class="container-fluid">
             <div class="container" style="margin-top: 50px;">
                 <div class="jumbotron">
-                    <h1>Inventory 8</h1><br>
-                    <p style="margin-top: 50px;">                        
-                        <a class="btn btn-primary btn-lg" href="ControlUsuario?vista=lista" role="button">
-                            <i class="fa fa-user h1"></i><br>
-                            Modulo Usuarios
-                        </a>
-                    </p>
+                    <%
+                        String nombre=(String)session.getAttribute("nombre");
+                        if(nombre == null)
+                        {
+                            response.sendRedirect("/MundoTecnologico/index.jsp");
+                        }
+                    %>
+                    <div class="row">
+                        <div class="col-12">
+                            <form method="post" action="ControlLogin">
+                                <input type="hidden" name="accion" value="logout"/>
+                                <button class="btn btn-primary" style="float: right">
+                                    Cerrar sesión                            
+                                </button>
+                            </form>                            
+                        </div>
+                        <div class="col-12">
+                            <h1>Inventory 8 </h1>
+                            <h3>Bienvenido ${nombre}</h3>
+                            <p style="margin-top: 50px;">                        
+                                <a class="btn btn-primary btn-lg" 
+                                   href="ControlUsuario?vista=lista" 
+                                   role="button">
+                                    <i class="fa fa-user h1"></i><br>
+                                    Modulo Usuarios
+                                </a>
+                                <a class="btn btn-primary btn-lg" 
+                                   href="ControlVentas?vista=lista" 
+                                   role="button">
+                                    <i class="fa fa-shopping-bag h1"></i><br>
+                                    Modulo Venta
+                                </a>
+                            </p>
+                        </div>                        
+                    </div>                    
                 </div>
             </div>
         </div>
