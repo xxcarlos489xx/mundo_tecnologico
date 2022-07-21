@@ -3,11 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/ModelosDAO/VentaDao.java</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/Controladores/ControlCategoria.java</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/Controladores/ControlVenta.java</file>
             <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/web/menu.jsp</file>
             <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/web/index.jsp</file>
-            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/Controladores/ControlUsuario.java</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/ModelosDAO/UsuarioDAO.java</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/Modelos/Venta_Detalle.java</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/web/usuarios/lista.jsp</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/Modelos/Products.java</file>
             <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/Controladores/ControlLogin.java</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/Modelos/Usuario.java</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/Modelos/Venta.java</file>
+            <file>file:/C:/Users/xxbla/OneDrive/Documentos/NetBeansProjects/MundoTecnologico/src/java/ModelosDAO/ProductDao.java</file>
         </group>
     </open-files>
 </project-private>

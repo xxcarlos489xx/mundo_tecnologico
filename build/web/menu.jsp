@@ -43,6 +43,10 @@
                                     <i class="fa fa-user h1"></i><br>
                                     Modulo Usuarios
                                 </a>
+                                <a class="btn btn-primary btn-lg" href="ControlCategoria?vista=lista" role="button">
+                                    <i class="fa fa-user h1"></i><br>
+                                    Modulo Categoria
+                                </a>
                                 <a class="btn btn-primary btn-lg" 
                                    href="ControlVentas?vista=lista" 
                                    role="button">
