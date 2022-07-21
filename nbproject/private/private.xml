@@ -3,11 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/src/java/Controladores/Rutas.java</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/web/dist/js/usuarios.js</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/src/java/Interfaces/UsuarioInterface.java</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/web/usuarios/lista.jsp</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/web/dist/css/Categoria.css</file>
             <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/src/java/Controladores/ControlUsuario.java</file>
-            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/nbproject/build-impl.xml</file>
-            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/web/menu.jsp</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/src/java/Controladores/ControlCategoria.java</file>
             <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/src/java/Config/Conexion.java</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/src/java/Modelos/Usuario.java</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/web/dist/js/Categoria.js</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/src/java/ModelosDAO/CategoriaDAO.java</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/web/dist/css/usuarios.css</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/web/index.jsp</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/src/java/ModelosDAO/UsuarioDAO.java</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/web/menu.jsp</file>
+            <file>file:/C:/Users/Rolando/Documents/NetBeansProjects/mundo_tecnologico/src/java/Modelos/Categoria.java</file>
         </group>
     </open-files>
 </project-private>

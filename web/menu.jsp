@@ -25,7 +25,7 @@
                         </a>
                     </p>
                     <p style="margin-top: 50px;">                        
-                        <a class="btn btn-primary btn-lg" href="ControlUsuario?vista=lista" role="button">
+                        <a class="btn btn-primary btn-lg" href="ControlCategoria?vista=lista" role="button">
                             <i class="fa fa-user h1"></i><br>
                             Modulo Categoria
                         </a>
